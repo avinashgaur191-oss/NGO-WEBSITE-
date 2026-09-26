@@ -286,7 +286,7 @@ index.html
 
 </body>
 </html>
-style.css
+style.CSS
 * {
     margin: 0;
     padding: 0;
