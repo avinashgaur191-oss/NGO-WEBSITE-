@@ -940,5 +940,44 @@ body {
         grid-template-columns: 1fr;
     }
 }
+script.js
+// Mobile Menu
+
+const menuBtn = document.getElementById("menuBtn");
+const navbar = document.getElementById("navbar");
+
+if (menuBtn) {
+
+    menuBtn.addEventListener("click", function () {
+
+        navbar.classList.toggle("show");
+
+    });
+
+}
+
+
+// Close menu after clicking a link
+
+const navLinks = document.querySelectorAll(".navbar a");
+
+navLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        navbar.classList.remove("show");
+
+    });
+
+});
+
+
+// Simple page loading message
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    console.log("Hope Foundation website loaded successfully.");
+
+});
 
 
